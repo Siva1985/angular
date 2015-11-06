@@ -1,0 +1,23 @@
+<div id='dberror' ng-show="dberrobj.dberrorFlag===1">
+<table>
+<tr>
+<td><span ng-click="close('dberror')">X</span></td>
+</tr>
+<tr>
+<td>Error Name</td>
+<td>{{dberrobj.name}}</td>
+</tr>
+<tr>
+<td>Message</td>
+<td>{{dberrobj.message}}</td>
+</tr>
+<tr>
+<td>Error Code</td>
+<td>{{dberrobj.original.errno}}</td>
+</tr>
+<tr>
+<td>Sql Executes</td>
+<td>{{dberrobj.original.sql}}</td>
+</tr>
+</table>
+</div>
